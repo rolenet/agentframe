@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.agentcore</groupId>
+        <artifactId>agentcore-parent</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <artifactId>agentcore-cluster</artifactId>
+    <name>AgentCore Cluster</name>
+    <description>AgentCore集群模块 - ClusterManager、节点协调功能</description>
+
+    <dependencies>
+        <!-- AgentCore核心模块 -->
+        <dependency>
+            <groupId>com.agentcore</groupId>
+            <artifactId>agentcore-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.agentcore</groupId>
+            <artifactId>agentcore-communication</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.agentcore</groupId>
+            <artifactId>agentcore-container</artifactId>
+        </dependency>
+
+        <!-- Spring Cloud Commons -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-commons</artifactId>
+            <version>4.1.4</version>
+        </dependency>
+
+        <!-- Netty (用于Raft协议实现) -->
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+        </dependency>
+
+        <!-- Redis -->
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-redis</artifactId>
+        </dependency>
+
+        <!-- 日志 -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+
+        <!-- 测试 -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+</project>

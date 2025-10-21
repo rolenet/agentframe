@@ -1,0 +1,124 @@
+{
+  "properties": [
+    {
+      "name": "agentcore.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Whether to enable AgentCore auto-configuration.",
+      "defaultValue": true
+    },
+    {
+      "name": "agentcore.container.name",
+      "type": "java.lang.String",
+      "description": "Name of the agent container.",
+      "defaultValue": "default-container"
+    },
+    {
+      "name": "agentcore.container.max-agents",
+      "type": "java.lang.Integer",
+      "description": "Maximum number of agents in the container.",
+      "defaultValue": 1000
+    },
+    {
+      "name": "agentcore.container.thread-pool-size",
+      "type": "java.lang.Integer",
+      "description": "Thread pool size for agent container.",
+      "defaultValue": 10
+    },
+    {
+      "name": "agentcore.communication.serializer",
+      "type": "java.lang.String",
+      "description": "Message serializer type (jackson, kryo).",
+      "defaultValue": "jackson"
+    },
+    {
+      "name": "agentcore.communication.transport",
+      "type": "java.lang.String",
+      "description": "Transport type (local, tcp).",
+      "defaultValue": "local"
+    },
+    {
+      "name": "agentcore.communication.tcp.port",
+      "type": "java.lang.Integer",
+      "description": "TCP transport port.",
+      "defaultValue": 7070
+    },
+    {
+      "name": "agentcore.communication.tcp.host",
+      "type": "java.lang.String",
+      "description": "TCP transport host.",
+      "defaultValue": "localhost"
+    },
+    {
+      "name": "agentcore.cluster.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Whether to enable cluster mode.",
+      "defaultValue": false
+    },
+    {
+      "name": "agentcore.cluster.node-name",
+      "type": "java.lang.String",
+      "description": "Name of the cluster node.",
+      "defaultValue": "node-1"
+    },
+    {
+      "name": "agentcore.cluster.discovery.type",
+      "type": "java.lang.String",
+      "description": "Node discovery type (multicast, redis).",
+      "defaultValue": "multicast"
+    },
+    {
+      "name": "agentcore.cluster.discovery.multicast.address",
+      "type": "java.lang.String",
+      "description": "Multicast address for node discovery.",
+      "defaultValue": "224.0.0.1"
+    },
+    {
+      "name": "agentcore.cluster.discovery.multicast.port",
+      "type": "java.lang.Integer",
+      "description": "Multicast port for node discovery.",
+      "defaultValue": 54327
+    },
+    {
+      "name": "agentcore.cluster.discovery.redis.host",
+      "type": "java.lang.String",
+      "description": "Redis host for node discovery.",
+      "defaultValue": "localhost"
+    },
+    {
+      "name": "agentcore.cluster.discovery.redis.port",
+      "type": "java.lang.Integer",
+      "description": "Redis port for node discovery.",
+      "defaultValue": 6379
+    },
+    {
+      "name": "agentcore.cluster.load-balancer",
+      "type": "java.lang.String",
+      "description": "Load balancer type (round-robin, random, least-load, consistent-hash).",
+      "defaultValue": "round-robin"
+    },
+    {
+      "name": "agentcore.cluster.heartbeat-interval",
+      "type": "java.time.Duration",
+      "description": "Heartbeat interval for cluster nodes.",
+      "defaultValue": "30s"
+    },
+    {
+      "name": "agentcore.cluster.node-timeout",
+      "type": "java.time.Duration",
+      "description": "Node timeout for cluster health check.",
+      "defaultValue": "90s"
+    },
+    {
+      "name": "agentcore.monitoring.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Whether to enable monitoring metrics.",
+      "defaultValue": true
+    },
+    {
+      "name": "agentcore.monitoring.update-interval",
+      "type": "java.time.Duration",
+      "description": "Metrics update interval.",
+      "defaultValue": "60s"
+    }
+  ]
+}

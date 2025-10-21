@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.agentcore</groupId>
+        <artifactId>agentcore-parent</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <artifactId>agentcore-spring-boot-starter</artifactId>
+    <name>AgentCore Spring Boot Starter</name>
+    <description>AgentCore Spring Boot集成模块 - 自动配置和监控指标收集</description>
+
+    <dependencies>
+        <!-- AgentCore所有模块 -->
+        <dependency>
+            <groupId>com.agentcore</groupId>
+            <artifactId>agentcore-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.agentcore</groupId>
+            <artifactId>agentcore-communication</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.agentcore</groupId>
+            <artifactId>agentcore-container</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.agentcore</groupId>
+            <artifactId>agentcore-cluster</artifactId>
+        </dependency>
+
+        <!-- Spring Boot -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        
+        <!-- Spring Boot Actuator -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-logging</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+        <!-- 监控 -->
+        <dependency>
+            <groupId>io.micrometer</groupId>
+            <artifactId>micrometer-core</artifactId>
+        </dependency>
+
+        <!-- 测试 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+</project>

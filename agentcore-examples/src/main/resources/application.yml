@@ -1,0 +1,48 @@
+# AgentCore示例项目配置
+spring:
+  application:
+    name: agentcore-examples
+  
+  # Redis配置（用于Agent通信）
+  redis:
+    host: localhost
+    port: 6379
+    password: 123456
+    database: 0
+    timeout: 2000ms
+    lettuce:
+      pool:
+        max-active: 8
+        max-wait: -1ms
+        max-idle: 8
+        min-idle: 0
+
+# AgentCore配置
+agentcore:
+  # Agent容器配置
+  container:
+    # 工作线程数
+    worker-threads: 4
+    # 消息队列大小
+    queue-capacity: 1000
+    # 消息超时时间（毫秒）
+    message-timeout: 5000
+  
+  # 集群配置
+  cluster:
+    # 集群名称
+    name: agentcore-demo-cluster
+    # 节点发现配置
+    discovery:
+      type: redis
+      # 节点心跳间隔（秒）
+      heartbeat-interval: 5
+  
+  # 通信配置
+  communication:
+    # 消息序列化方式
+    serializer: json
+    # 通信协议
+    protocol: redis
+server:
+  port: 8082
