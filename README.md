@@ -374,7 +374,7 @@ public interface AgentContainer {
 
 - 项目主页: https://gitee.com/CocoLiu/agentframe
 - 问题反馈: https://gitee.com/CocoLiu/agentframe/issues
-- 邮箱: liu_kou@sohu.com
+- 邮箱: cocoliu2004@gmail.com
 
 ---
 
